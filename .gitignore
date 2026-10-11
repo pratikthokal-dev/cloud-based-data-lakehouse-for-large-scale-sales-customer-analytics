@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and generated files
+logs/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local data files
+data/raw/
+data/bronze/
+data/silver/
+data/gold/
+
+# dbt generated artifacts
+dbt_project/target/
+dbt_project/logs/
+dbt_project/dbt_packages/
+
+# Nested dbt project artifacts
+dbt_project/**/target/
+dbt_project/**/logs/
+dbt_project/**/dbt_packages/
+
+# Python virtual environments anywhere in the repository
+**/.venv/
+
+# Power BI temporary and backup files
+*.pbix~

@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: retail_analytics
+    description: "Analytics tables loaded into Amazon Redshift from the AWS lakehouse."
+    schema: retail_analytics
+
+    tables:
+
+      - name: monthly_sales
+        description: "Monthly sales aggregation produced from the Gold layer."
+
+      - name: customer_analytics
+        description: "Customer-level sales and revenue analytics produced from the Gold layer."
+
+      - name: product_analytics
+        description: "Product-level sales and revenue analytics produced from the Gold layer."
+
+      - name: country_analytics
+        description: "Country-level sales and customer analytics produced from the Gold layer."
+
+      - name: transaction_summary
+        description: "Summary of sales, returns, cancellations, and financial adjustments."
